@@ -5,44 +5,37 @@
 <p>Tu afiliación es sumamente importante para nosotros y para las personas que apoyan y se esfuerzan por hacer crecer este proyecto político.</p>
 <p>¡Te esperamos!</p>
 
-<br>
-
 <h3 class="texto-resaltado">CONDICIONES</h3>
 <p>IMPORTANTE! Los datos facilitados por este medio no serán difundidos ni publicados en ningún medio de acceso público o privado, quedando siempre en una base de datos confidencial. El Partido Libertario se compromete a preservar la privacidad y anonimato del solicitante en todo momento.</p>
-<p>Al completar y enviar el presente formulario se manifiesta el permiso del solicitante para que sus datos sean utilizados con la única finalidad de ser presentados ante justicia electoral en formato de ficha de afiliación. En caso de duda o reclamo por favor contactarse vía e-mail a .</p>
-<p>Si no podés completar el registro por algún motivo envianos un mensaje a nuestra pagina:</p>
-
-<br>
+<p>Al completar y enviar el presente formulario se manifiesta el permiso del solicitante para que sus datos sean utilizados con la única finalidad de ser presentados ante justicia electoral en formato de ficha de afiliación. En caso de duda o reclamo por favor contactarse vía e-mail a <a href="mailto:plibertarioctes@gmail.com">plibertarioctes@gmail.com</a>.</p>
+<p>Si no podés completar el registro por algún motivo envianos un mensaje a nuestra pagina: <a href="https://plibertarioctes.com.ar">https://plibertarioctes.com.ar</a></p>
 
 <mat-checkbox>Acepto los terminos</mat-checkbox>
 
 <form>
-  <mat-form-field appearance="fill">
+  <mat-form-field>
     <mat-label>DNI</mat-label>
     <input matInput>
   </mat-form-field>
-  <br>
-  <mat-form-field appearance="fill">
+  <mat-form-field>
     <mat-label>Estado civil</mat-label>
-    <select>
-      <option>Casado</option>
-      <option>Soltero</option>
-      <option>Divorciado</option>
-    </select>
+    <mat-select>
+      <mat-option *ngFor="let estadoCivil of estadosCiviles" [value]="estadoCivil">
+        {{estadoCivil}}
+      </mat-option>
+    </mat-select>
   </mat-form-field>
-  <br>
-  <mat-form-field appearance="fill">
+  <mat-form-field>
     <mat-label>Profesión</mat-label>
     <input matInput>
   </mat-form-field> 
-  <br>
   <mat-form-field>
     <mat-label>Departamento</mat-label>
-    <mat-select value="Capital">
-      <mat-option>Capital</mat-option>
-      <mat-option>Goya</mat-option>
-      <mat-option>Empedrado</mat-option>
+    <mat-select>
+      <mat-option *ngFor="let departamento of departamentos" [value]="departamento">
+        {{departamento}}
+      </mat-option>
     </mat-select>
   </mat-form-field>
+  <button mat-flat-button color="primary" type="submit">¡Afiliate ahora!</button>
 </form>
-<button mat-flat-button color="primary">¡Afiliate ahora!</button>
