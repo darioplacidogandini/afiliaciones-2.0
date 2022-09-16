@@ -1,4 +1,4 @@
-<h1 color="primary">Afiliaciones</h1>
+<h1>Afiliaciones</h1>
 <p>Para poder conformarnos legalmente necesitamos entregar a la justicia electoral 4000 juegos de fichas de afiliación correspondiente a 4000 personas dispuestas a firmar y llenar los datos que nos exigen. No nos gusta pedirte tantos datos y es incómodo para nosotros, pero es la única manera de poder participar en elecciones.</p>
 <p>Una vez constituido como partido estarás legalmente afiliado. Nadie puede saber que estás afiliado, no es un dato público. De nuestra parte, te pediremos autorización para contactarte al número de teléfono que nos dejes para invitarte a participar en eventos y avisarte directamente de elecciones internas del partido. Nunca te obligaremos a nada, no te exigirémos dinero ni ningún tipo de participación. No estás obligado a reunirte ni a fiscalizar para elecciones. Cualquier tipo de participación es completamente voluntaria.</p>
 <p>Cuando el partido esté constituido, si por algún motivo te querés desafiliar, podrás hacerlo con un simple trámite y no require ningún tipo de autorización, explicación o contacto nuestro. La afiliación no te obliga a votarnos.</p>
@@ -14,28 +14,35 @@
 
 <br>
 
-<label for="terms">Acepto los terminos</label>
-<input type="checkbox" name="terms">
+<mat-checkbox>Acepto los terminos</mat-checkbox>
 
 <form>
-  <label for="dni">DNI</label>
-  <input name="dni" type="number">
+  <mat-form-field appearance="standard">
+    <mat-label>DNI</mat-label>
+    <input matInput>
+  </mat-form-field>
   <br>
-  <label for="estado-civil">Estado civil</label>
-  <select name="estado-civil">
-    <option>Casado</option>
-    <option>Soltero</option>
-    <option>Divorciado</option>
-  </select>
+  <mat-form-field appearance="standard">
+    <mat-label>Estado civil</mat-label>
+    <select>
+      <option>Casado</option>
+      <option>Soltero</option>
+      <option>Divorciado</option>
+    </select>
+  </mat-form-field>
   <br>
-  <label for="profesion">Profesión</label>
-  <input name="profesion" type="text"> 
+  <mat-form-field appearance="standard">
+    <mat-label>Profesión</mat-label>
+    <input matInput>
+  </mat-form-field> 
   <br>
-  <label for="departamento">Departamento</label>
-  <select name="departamento">
-    <option>Capital</option>
-    <option>Goya</option>
-    <option>Empedrado</option>
-  </select>
+  <mat-form-field>
+    <mat-label>Departamento</mat-label>
+    <mat-select>
+      <mat-option>Capital</mat-option>
+      <mat-option>Goya</mat-option>
+      <mat-option>Empedrado</mat-option>
+    </mat-select>
+  </mat-form-field>
 </form>
 <button mat-flat-button color="primary">¡Afiliate ahora!</button>
