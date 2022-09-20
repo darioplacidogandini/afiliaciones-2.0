@@ -1,0 +1,27 @@
+<form>
+    <mat-form-field>
+      <mat-label>DNI</mat-label>
+      <input matInput>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Estado civil</mat-label>
+      <mat-select>
+        <mat-option *ngFor="let estadoCivil of estadosCiviles" [value]="estadoCivil">
+          {{estadoCivil}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Profesión</mat-label>
+      <input matInput>
+    </mat-form-field> 
+    <mat-form-field>
+      <mat-label>Departamento</mat-label>
+      <mat-select>
+        <mat-option *ngFor="let departamento of departamentos" [value]="departamento">
+          {{departamento}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <button routerLink="/paso-2" mat-flat-button color="primary" type="submit">Siguiente paso</button>
+  </form>

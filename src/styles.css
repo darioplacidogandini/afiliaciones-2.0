@@ -1,4 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
+body { 
+    margin: 0; 
+    font-family: Roboto, "Helvetica Neue", sans-serif; 
+}
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.texto-resaltado {
+    color: #8a2be2;
+}
+
+a {
+    text-decoration: none;
+    color: #ffaf4d;
+}
+
+form {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+mat-form-field {
+    padding-left: 4px;
+    padding-right: 4px;
+}

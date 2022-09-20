@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import estadosCiviles from '../assets/estados-civiles.json';
-import departamentos from '../assets/departamentos.json';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +7,4 @@ import departamentos from '../assets/departamentos.json';
 })
 export class AppComponent {
   title = 'afiliaciones-2.0';
-
-  estadosCiviles = estadosCiviles;
-  departamentos = departamentos;
 }
