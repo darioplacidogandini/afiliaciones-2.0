@@ -13,13 +13,14 @@ a {
 }
 
 form {
-    width: 400px;
+    width: 310px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
 }
 
 mat-form-field {
+    width: 300px;
     padding-left: 4px;
     padding-right: 4px;
 }
