@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
+import { WebcamModule } from 'ngx-webcam';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -34,6 +35,7 @@ import { InicioComponent } from './componentes/inicio/inicio.component';
         {path: 'paso-3',component:FormAfiliacionContactoComponent},
         {path: '',redirectTo: '', pathMatch:'full'},
       ]),
+    WebcamModule,
     BrowserAnimationsModule,
     MatButtonModule,
     MatFormFieldModule,

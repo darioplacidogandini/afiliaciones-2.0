@@ -1,8 +1,13 @@
 #imagenDni {
-    height: 290px;
-    width: 290px;
+    height: 240px;
+    width: 320px;
     background-color: silver;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 3px;
+}
+
+#vistaPreviaFoto {
+    height: 240px;
+    width: 320px;
 }
