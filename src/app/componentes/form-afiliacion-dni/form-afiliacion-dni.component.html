@@ -1,12 +1,13 @@
 <h1 class="texto-resaltado">Carga una foto de tu DNI</h1>
 <form>
-    <div id="imagenDni" (click)="triggerSnapshot()">
+    <div id="imagenDni">
         <webcam [height]="240" [width]="320" [trigger]="triggerObservable" (imageCapture)="handleImage($event)"
             *ngIf="showWebcam" [switchCamera]="nextWebcamObservable"></webcam>
         <div class="snapshot" *ngIf="webcamImage && !showWebcam">
             <img id="vistaPreviaFoto" [src]="webcamImage.imageAsDataUrl"/>
         </div>
     </div>
-    <button routerLink="/paso-3"  mat-flat-button color="primary" type="submit">ACEPTAR</button>
+        <button (click)="triggerSnapshot()" mat-flat-button color="accent">TOMAR FOTO</button>
+        <button routerLink="/paso-3"  mat-flat-button color="primary" type="submit">ACEPTAR</button>
 </form>
 

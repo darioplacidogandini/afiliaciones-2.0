@@ -1,1 +1,1 @@
-Afiliaciones 2.0
+Página de Afiliación al Partido Libertario Corrientes
