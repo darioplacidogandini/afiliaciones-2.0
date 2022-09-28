@@ -2,12 +2,14 @@
 <form>
     <div id="imagenDni">
         <webcam [height]="240" [width]="320" [trigger]="triggerObservable" (imageCapture)="handleImage($event)"
-            *ngIf="showWebcam" [switchCamera]="nextWebcamObservable"></webcam>
-        <div class="snapshot" *ngIf="webcamImage && !showWebcam">
+            *ngIf="showWebcam">
+        </webcam>
+        <div class="snapshot" *ngIf="webcamImage">
             <img id="vistaPreviaFoto" [src]="webcamImage.imageAsDataUrl"/>
         </div>
     </div>
-        <button (click)="triggerSnapshot()" mat-flat-button color="accent">TOMAR FOTO</button>
-        <button routerLink="/paso-3"  mat-flat-button color="primary" type="submit">ACEPTAR</button>
+    <button type="button" (click)="triggerSnapshot()" mat-flat-button color="accent">TOMAR FOTO</button>
+    <button routerLink="/paso-3"  mat-flat-button color="primary" type="submit">ACEPTAR</button>
 </form>
+
 
