@@ -8,6 +8,7 @@
             <img id="vistaPreviaFoto" [src]="webcamImage.imageAsDataUrl"/>
         </div>
     </div>
+    <button *ngIf="" type="button" (click)="triggerSnapshot()" mat-flat-button color="warn">BORRAR FOTO</button>
     <button type="button" (click)="triggerSnapshot()" mat-flat-button color="accent">TOMAR FOTO</button>
     <button routerLink="/paso-3"  mat-flat-button color="primary" type="submit">ACEPTAR</button>
 </form>
