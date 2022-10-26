@@ -7,6 +7,11 @@ import { Afiliado } from '../model/afiliado.model';
   providedIn: 'root'
 })
 export class AfiliadosService {
+  private baseUrl = 'https://localhost:8080';
 
-  constructor() { }
+  constructor(private http:HttpClient) {}
+
+  listar(): Observable<Afiliado[]> {
+    return this.http.get<Afiliado[]>(`${this.baseUrl}/afiliados`);
+  }
 }

@@ -14,6 +14,7 @@ import { TerminosComponent } from './componentes/terminos/terminos.component';
 import { FormAfiliacionDniComponent } from './componentes/form-afiliacion-dni/form-afiliacion-dni.component';
 import { FormAfiliacionContactoComponent } from './componentes/form-afiliacion-contacto/form-afiliacion-contacto.component';
 import { InicioComponent } from './componentes/inicio/inicio.component';
+import { AdminComponent } from './componentes/admin/admin.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { InicioComponent } from './componentes/inicio/inicio.component';
     TerminosComponent,
     FormAfiliacionDniComponent,
     FormAfiliacionContactoComponent,
-    InicioComponent
+    InicioComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
