@@ -1,1 +1,7 @@
-<p>admin works!</p>
+<h1>Lista de afiliados</h1>
+<tr *ngFor="let afiliado of afiliados">
+    <td>{{afiliado.dni}}</td>
+    <td>{{afiliado.departamento}}</td>
+    <td>{{afiliado.mail}}</td>
+    <td>{{afiliado.profesion}}</td>
+</tr>
