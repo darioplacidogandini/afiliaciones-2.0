@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
+import { HttpClientModule } from '@angular/common/http';
 import { WebcamModule } from 'ngx-webcam';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
@@ -28,6 +29,7 @@ import { AdminComponent } from './componentes/admin/admin.component';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     RouterModule.forRoot(
       [
         {path: '',component:InicioComponent},
@@ -35,6 +37,7 @@ import { AdminComponent } from './componentes/admin/admin.component';
         {path: 'paso-1',component:FormAfiliacionComponent},
         {path: 'paso-2',component:FormAfiliacionDniComponent},
         {path: 'paso-3',component:FormAfiliacionContactoComponent},
+        {path: 'admin',component:AdminComponent},
         {path: '',redirectTo: '', pathMatch:'full'},
       ]),
     WebcamModule,
