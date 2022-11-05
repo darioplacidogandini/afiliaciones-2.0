@@ -12,6 +12,6 @@ export class AfiliadosService {
   constructor(private http:HttpClient) {}
 
   listar(): Observable<Afiliado[]> {
-    return this.http.get<Afiliado[]>(`${this.baseUrl}/afiliados`);
+    return this.http.get<Afiliado[]>(`${this.baseUrl}/lista`);
   }
 }
