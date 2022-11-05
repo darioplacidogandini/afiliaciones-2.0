@@ -3,11 +3,11 @@ import { Afiliado } from 'src/app/model/afiliado.model';
 import { AfiliadosService } from 'src/app/servicios/afiliados.service';
 
 @Component({
-  selector: 'app-admin',
-  templateUrl: './admin.component.html',
-  styleUrls: ['./admin.component.css']
+  selector: 'app-lista-afiliados',
+  templateUrl: './lista-afiliados.component.html',
+  styleUrls: ['./lista-afiliados.component.css']
 })
-export class AdminComponent implements OnInit {
+export class ListaAfiliadosComponent implements OnInit {
 
   afiliado: Afiliado[];
 

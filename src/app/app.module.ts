@@ -15,7 +15,8 @@ import { TerminosComponent } from './componentes/terminos/terminos.component';
 import { FormAfiliacionDniComponent } from './componentes/form-afiliacion-dni/form-afiliacion-dni.component';
 import { FormAfiliacionContactoComponent } from './componentes/form-afiliacion-contacto/form-afiliacion-contacto.component';
 import { InicioComponent } from './componentes/inicio/inicio.component';
-import { AdminComponent } from './componentes/admin/admin.component';
+import { ListaAfiliadosComponent } from './componentes/lista-afiliados/lista-afiliados.component';
+import { LoginComponent } from './componentes/login/login.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { AdminComponent } from './componentes/admin/admin.component';
     FormAfiliacionDniComponent,
     FormAfiliacionContactoComponent,
     InicioComponent,
-    AdminComponent
+    ListaAfiliadosComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +39,8 @@ import { AdminComponent } from './componentes/admin/admin.component';
         {path: 'paso-1',component:FormAfiliacionComponent},
         {path: 'paso-2',component:FormAfiliacionDniComponent},
         {path: 'paso-3',component:FormAfiliacionContactoComponent},
-        {path: 'admin',component:AdminComponent},
+        {path: 'login',component:LoginComponent},
+        {path: 'lista',component:ListaAfiliadosComponent},
         {path: '',redirectTo: '', pathMatch:'full'},
       ]),
     WebcamModule,
