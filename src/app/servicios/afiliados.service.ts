@@ -7,7 +7,7 @@ import { Afiliado } from '../model/afiliado.model';
   providedIn: 'root'
 })
 export class AfiliadosService {
-  private baseUrl = 'localhost:8080';
+  private baseUrl = 'http://localhost:8080';
 
   constructor(private http:HttpClient) {}
 
